@@ -6,9 +6,20 @@
     box-sizing: border-box;
 }
 
-.navigation {
+nav {
     width: 55%;
-    margin: 0 auto;
+    margin: 0px auto;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
+.navigation a {
+    color: grey;
+    margin: 0% 8.5% 0% 0%;
+    text-decoration: none;
 }
 
 header {
@@ -17,14 +28,36 @@ header {
     display: flex;
 }
 
+.head-h1 {
+    height: 50%;
+    margin: 5% 24.4%;
+    text-align: center;
+}
+
 .main-section {
     width: 55%;
     margin: 0 auto;
     display: flex;
+    flex-wrap: wrap;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.middle-img {
+    
+}
+
+.main-container {
+    width: 40%;
 }
 
 .contact {
     width: 55%;
     margin: 0 auto;
     display: flex;
+}
+
+footer {
+    width: 55%;
+    margin: 0 auto;
 }
