@@ -2,7 +2,7 @@
 
 * {
     max-width: 100%;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     box-sizing: border-box;
 }
 
@@ -31,7 +31,14 @@ header {
 .head-h1 {
     height: 50%;
     margin: 5% 24.4%;
+    padding: 0% 0% 4% 0%;
     text-align: center;
+}
+
+.head-h1 button {
+    width: 90%;
+    border: 1px solid black;
+    background-color: white;
 }
 
 .main-section {
@@ -39,16 +46,18 @@ header {
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
+    justify-content: space-evenly;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
 }
 
 .middle-img {
-    
+    width: 100%;
 }
 
 .main-container {
-    width: 40%;
+    width: 30%;
+    margin: 1% 0% 1% 0%;
 }
 
 .contact {
@@ -60,4 +69,5 @@ header {
 footer {
     width: 55%;
     margin: 0 auto;
+    text-align: center;
 }
