@@ -50,7 +50,7 @@ table {
 /* Set every element's box-sizing to border-box */
 * {
 	box-sizing: border-box;
-	/* border: 1px solid black; */
+    border: 1px solid black;
 }
 
 html, body {
@@ -87,6 +87,39 @@ a {
 	width: 13%;
 }
 
+@media(max-width: 800px) {
+    nav {
+        width: 90%;
+        height: 10vh;
+        flex-wrap: wrap-reverse;
+        justify-content: space-evenly;
+    }
+
+    .links {
+        width: 100%;
+    }
+
+    a {
+        margin: 30px 30px;
+    }
+}
+
+@media(max-width: 500px) {
+    nav {
+        height: 50vh;
+        flex-direction: column-reverse;
+    }
+
+    .links {
+        height:40vh;
+    }
+
+    a {
+
+        margin: 0px;
+    }
+}
+
 /* header section */
 header {
 	width: 60%;
@@ -115,6 +148,23 @@ button {
 
 .header-img {
 	margin: 0 auto;
+}
+
+@media(max-width: 800px) {
+    header {
+        width: 90%;
+        margin: 0 auto;
+        align-items: center;
+    }
+
+    .title {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .header-img {
+        display: none;
+    }
 }
 
 /* first section */
@@ -161,11 +211,31 @@ button {
 	width: 30%;
 	font-family: 'Sriracha', cursive;
 }
+
+@media(max-width: 800px) {
+    #first-section {
+        width: 90%;
+    }
+}
+
+@media(max-width: 500px) {
+    .features, .about, .service, .product, .vision {
+        width: 100%;
+    }
+}
+
 /* contact section */
 #contact {
 	width: 60%;
 	margin: 0 auto;
 }
+
+@media(max-width: 800px) {
+    #contact {
+        width: 90%; 
+    }
+}
+
 /* footer section */
 footer {
 	width: 60%;
@@ -174,27 +244,9 @@ footer {
 	text-align: center;
 }
 
-/* Servers page style below */
-.head-container {
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
+@media(max-width: 800px) {
+    footer {
+        width: 90%;
+        padding: 10px 0px;
+    }
 }
-
-.head-container p, h1{
-	font-size: 1.5rem;
-}
-
-.services-header-img {
-	width: 100%;
-}
-
-.holder {
-	width: 49%;
-	height: 150px;
-	padding:;
-	margin: 0px 0px 15px 0px;
-	background-color: #e2d7d7;
-	border: 1px solid black;
-}
-
